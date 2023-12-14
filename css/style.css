@@ -1,0 +1,51 @@
+body{
+    background-color: #263849;
+}
+.pageHeadSec h1{
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+}
+.pageHeadSec p{
+    text-align: center;
+    color: #b9b9b9;
+    margin-top: 24px;
+}
+.pageHeadSec p>span{
+    color: #2281C2;
+    font-weight: 700;
+}
+.formSec  [type=url]{
+height: 50px;
+border-radius: 6px;
+padding: 0 16px;
+}
+.formSec  [type=button]{
+    background-color: #2281C2;
+    border: 0;
+    font-weight: 600;
+    height: 50px;
+    border-radius: 4px;
+    margin-left: 5px;
+}
+#inputUrlBtn:hover{
+    background-color: #09a4f5;
+}
+.formSec{
+    display: flex;
+    justify-content: center;
+}
+#inputUrl{
+    border: 0;
+}
+#inputUrl:focus-visible{
+    outline-style: none;
+}
+#inputUrl:hover{
+    border: 1px solid #09a4f5;
+}
+#inputUrl::placeholder{
+    font-size: 18px;
+    color: #c1c1c1;
+    font-weight: 500;
+}
