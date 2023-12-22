@@ -1,51 +1,90 @@
 body{
-    background-color: #263849;
+    background-color: #864ff7;
 }
-.pageHeadSec h1{
-    text-align: center;
-    color: #fff;
-    font-weight: 700;
-}
-.pageHeadSec p{
-    text-align: center;
-    color: #b9b9b9;
-    margin-top: 24px;
-}
-.pageHeadSec p>span{
-    color: #2281C2;
-    font-weight: 700;
-}
-.formSec  [type=url]{
-height: 50px;
-border-radius: 6px;
-padding: 0 16px;
-}
-.formSec  [type=button]{
-    background-color: #2281C2;
-    border: 0;
-    font-weight: 600;
-    height: 50px;
-    border-radius: 4px;
-    margin-left: 5px;
-}
-#inputUrlBtn:hover{
-    background-color: #09a4f5;
-}
-.formSec{
+.currencyCardParent{
     display: flex;
+    height: 100vh;
+    align-items: center;
     justify-content: center;
 }
-#inputUrl{
+.currencyCard{
+    background-color: #fff;
+    padding: 26px;
+    border-radius: 10px;
+}
+#inputAmount{
+    width: 100%;
     border: 0;
+    border-bottom: 2px solid #6b34d7;
 }
-#inputUrl:focus-visible{
-    outline-style: none;
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
-#inputUrl:hover{
-    border: 1px solid #09a4f5;
+
+#inputAmount:focus-visible{
+    outline: 0 !important;
 }
-#inputUrl::placeholder{
-    font-size: 18px;
-    color: #c1c1c1;
-    font-weight: 500;
+.app-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.app-header img{
+    width: 130px;
+}
+h3{
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+.currencyOption{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.currencyOption select{
+    background: #6b34d7;
+    width: 46%;
+    color: #fff;
+    font-weight: 400;
+    outline: 0;
+}
+.currencyOption select:focus-visible{
+    background: #864ff7;
+}
+#convert-btn{
+    width: 100%;
+    background-color: #6b34d7;
+    margin-top: 20px;
+    color: #fff;
+    font-weight: 600;
+}
+#convert-btn:hover{
+    background-color: #864ff7;
+}
+#convert-btn:focus-visible{
+    background-color: #864ff7;
+}
+#result{
+    width: 100%;
+    background-color: #b39de1;
+    height: 40px;
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 40px;
+    font-weight: 600;
+}
+#result{
+    display: none;
+}
+@media (min-width: 768px){
+    .col-md-3 {
+        flex: 0 0 auto;
+        width: auto !important;
+    }
 }
